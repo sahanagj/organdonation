@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<style>
+			
+			form
+			{
+				font-size:20px;
+				margin:10px;	
+				
+			}
+			
+			input[type="text"],input[type="password"]
+			{
+				width: auto;
+				padding: 5px 8px;				
+				color: #666;
+				border: none;
+				background-color: #fff;
+				border-radius: 4px;
+			}
+			input[type="text"]:hover,focus 
+			{
+				box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+			}
+			input[type="password"]:hover,focus 
+			{
+				box-shadow: 0 0 12px rgba(51, 204, 255, 0.5);
+			}
+			input[type="submit"]
+			{
+				padding: 8px 15px;
+				font-family: Helvetica;
+				font-weight: bold;
+				line-height: 1;
+				color: Black;
+				border: none;
+				background-color: #48D1CC;
+				border-radius: 23px;
+				text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+				cursor:pointer;
+				font-size:15px;
+			}
+			label
+			{
+				font-family:Helvetica;
+				
+				width:auto;
+				display: block;
+				font-weight: bold;
+				line-height: 1.4;
+				color: Black;
+				
+				text-shadow: 0 1px 1px #fff;
+			}
+			button
+			{
+				padding: 8px 15px;
+				font-family: Helvetica;
+				font-weight: bold;
+				line-height: 1;
+				color: Black;
+				border: none;
+				background-color: #48D1CC;
+				border-radius: 23px;
+				text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+				cursor:pointer;
+				font-size:15px;
+			}
+			#sbutton
+			{
+			padding: 8px 15px;
+				font-family: Helvetica;
+				font-weight: bold;
+				line-height: 1;
+				color: Black;
+				border: none;
+				background-color: #48D1CC;
+				border-radius: 23px;
+				text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+				cursor:pointer;
+				
+			}
+			p{
+			font-family:Helvetica;
+			}
+			.column 
+			{
+				float: left;
+				width: 50%;
+				padding: 10px;
+				height: 300px; /* Should be removed. Only for demonstration */
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 10px;
+			}
+			.footer
+{
+	
+	background:white;	
+	position:absolute;	
+	height:15;
+	bottom:2;
+	right:0;
+	left:0;
+	
+}
+.footer p
+{
+	text-align:center;
+	color:black;
+	
+}
+.footer figure
+{
+	padding:0 100px 0 0
+	display:center;
+	
+}
+		</style>
+	</head>
+	<body>
+		<form action="http://localhost/wtlab/hosp_profile.php" method = "post">
+		
+			</br>
+			<p style="font-weight:bold;">New! Please <a href="hosp_registration.html"><button type="button" id="sbutton">Sign up</button></a></p></br>
+				<label>Your email</label></br>
+				<input type="text" placeholder="Enter your email here" name="email" required>
+				</br></br></br>		
+				<label>Password</label></br>
+				<input type="password" placeholder="Enter your password here" name="password" required>
+				</br></br></br>	
+				<input type="checkbox"checked="checked"> Remember me </br></br></br>						
+				<input type="submit" value="Sign in"/></br></br>
+				
+				
+				
+		</form>
+	
+		
+		
+		
+		<div class="footer">
+		
+
+			<figure align="center">
+				<img src="facebook.jpg" hspace="10"/>
+				<img src="twitter.jpg" hspace="20"/>
+				<img src="instagram.jpg"/>
+			</figure>
+		</p>
+			
+			<p>&copy Copyright 2018 All rights reserved</p>
+		</div>
+	</body>
+</html>

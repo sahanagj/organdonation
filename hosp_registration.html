@@ -1,0 +1,161 @@
+<html>
+<style>
+html{
+margin:15px;
+}
+body {font-family: Arial;
+ background-color: #8C90BF;
+ background-repeat:no-repeat;
+ margin:15px;}
+/* Full-width input fields */
+input[type=text], input[type=password] ,input[type=date],select{
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: outline-block;
+    border: 1px solid black;
+    background: white;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+img{
+border:none;
+padding:150px;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 10px;
+  padding-top:0%;
+  width: 70%;
+  min-width: 300px;
+  border: 1px solid black;
+}
+
+H1{
+padding-top:20px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 80px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<body>
+<form id="regForm" action="http://localhost/wtlab/hosp_registration.php" method="post" style="border:1px solid #ccc">
+    <center><h1>REGISTER HERE TO JOIN US</h1></center>
+	<div class="row">
+	<div class="column">
+    <label><b>Hospital Name</b></label></br>
+    <input type="text" placeholder="Enter name" name="hname" required>
+	</div>
+	<div class="column">
+    <label><b>Hospital License Number</b></label></br>
+    <input type="text" placeholder="Enter License Number" name="hlicense" required>
+	</div>
+	</div>
+	<div class="row">
+	<div class="column">
+    </br><label for="email"><b>Phone Number</b></label></br>
+    <input type="text" placeholder="Enter Phone Number" name="hphno" required>
+	</div>
+	<div class="column">
+     </br><label><b>Email</b></label></br>
+    <input type="text" placeholder="Enter Email" name="hemail" required>
+	</div>
+	</div>
+	<div class="row">
+	<div class="column">
+	</br><label for="psw"><b>Password</b></label></br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	</div>
+	<div class="column">
+    </br><label for="psw-repeat"><b>Repeat Password</b></label></br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	</div>
+	</div>
+	<div class="row">
+	<div class="column">
+	</br><label><b>City</b></label></br>
+    <input type="text" placeholder="Enter City" name="city" required>
+	</div>
+	<div class="column">
+    </br><label><b>State</b></label></br>
+    <input type="text" placeholder="Enter State" name="state" required>
+	</div>
+	</div>
+	<div class="row">
+	<div class="column">
+	</br><label><b>Country</b></label></br>
+    <input type="text" placeholder="Enter Country" name="country" required>
+	</div>
+	</div>
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+</form>
+
+</body>
+</html>

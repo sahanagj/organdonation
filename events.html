@@ -1,0 +1,214 @@
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial;}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 17px;
+	font-family: 'Rammetto One', cursive;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container img {vertical-align: left;}
+
+.container .content {
+    position: absolute;
+    top:0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding-top: 0px;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: lightgreen;
+	}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: lightgreen;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+p,h5{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color:lightgreen;
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.box{
+    width: 100%;
+	height:30%;
+    border: none;
+    padding-top: 25px;
+	font-family:Helvetica;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.animate-left{position:relative;
+	animation:animateleft 1s;}
+@keyframes animateleft{from 
+{left:-300px;opacity:0} 
+to{left:0;opacity:1}
+}
+.animate-right{position:relative;
+	animation:animateright 1s;}
+@keyframes animateright{from 
+{right:-300px;opacity:0} 
+to{right:0;opacity:1}
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+	padding-left: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display:none;
+    clear: both;
+}
+</style>
+<body>
+<?php include 'header.php'; ?>
+<!--<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'contribute')">Ways to contribute</button>
+  <button class="tablinks" onclick="openCity(event, 'camps')">Camps and events</button>
+  <button class="tablinks" onclick="openCity(event, 'partner')">Become our partner</button>
+</div>-->
+
+<div id="contribute" class="tabcontent">
+<div class="container">
+  <img src="donate.jpg" style="width:100%; height:70%">
+  <div class="content">
+   <center> <h1>DONATE TO GIVE HOPE</h1></center>
+    <p>Every Rupee that is contributed by the public to Give Hope goes directly towards increasing the number of organ, eye and tissue donors.</p>
+	  </div>
+	<div class="box" style="background-color: lightblue;"><h1 style="font-family:'Rammetto One', cursive;"> <center>Support to Give Hope</center></h1>
+	<center><button class="button">Click here to contribute</button></center>
+	</div>
+	<center><h2>DONATE TO GIVE HOPE</h2></center>
+	<p>Whether your contribution is made in honor of a loved one currently waiting for a transplant, in honor of someone who lost his or her life in the battle against time, or just because you recognize the urgency, it will save lives in the future.
+</p>
+	<h5>Contribute Online</h5>
+	<p>Every rupee that is contributed by the public to Give Hope goes directly towards increasing the number of organ, eye and tissue donors, one person at a time. Whether your contribution is made in honor of a loved one currently waiting for a transplant, in honor of someone who lost his or her life in the battle against time, or just because you recognize the urgency, it will save lives in the future.
+</p>
+	<h5>Monthly Giving</h5>
+	<p>Join our Donate LifeLine to provide the steady, reliable support we so urgently need to save and heal more lives through donation. At the time of your donation, just indicate you would like to make it a monthly contribution. It is that easy to make an everlasting impact on our mission!</p>
+</div>
+</div>
+
+<!--<div id="camps" class="tabcontent">
+<center><h1>Events by Give Hope</h1><center>
+<div class="row">
+<div class="column">
+<div class="animate-left">
+<div class="box"style="background-color:#ffb3b3;width:100%;height:80%;">
+<center><h2>Current events:</h2></center>
+<ul>
+<p><li><b>1st Feb 2018:</b> Organ donation awareness in christ university by prof.ABC from 10:30am to 12:30pm<a href="">Read more</a></li></p>
+<li><a href="">12th Feb 2018: organ donation awareness camp by Give Hope team at palace grounds Bangalore from 6:00am to 6:00pm</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="animate-right">
+<div class="box"style="background-color:#66c2ff;width:100%;height:80%;">
+<center><h2>Past Events:</h2></center>
+</div>
+</div>
+</div>
+</div>
+  <img src="org.jpg" style="width:100%; height:60%">
+  <div class="box"style="background-color: pink;">
+  <h3><center>If you wish to save 8 lives then create awareness by conducting camps</center></h3>
+  <center><button class="button">Conduct Camp</button></center>
+</div>
+
+</div>
+<div id="partner" class="tabcontent">
+  <h3></h3>
+  <p></p>
+</div>-->
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     </head>
+</body>
+</html>
